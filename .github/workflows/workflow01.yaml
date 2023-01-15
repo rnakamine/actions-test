@@ -5,4 +5,4 @@ jobs:
   job01:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "this is pen"
+      - run: echo ${{ env.GITHUB_RUN_ID }}
