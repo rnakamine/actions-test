@@ -4,6 +4,10 @@ on: workflow_dispatch
 jobs:
   job01:
     runs-on: ubuntu-latest
+    steps:
+      - run: echo $GITHUB_RUN_ID
+  job02:
+    runs-on: ubuntu-latest
     environment: test
     steps:
       - run: echo $GITHUB_RUN_ID
