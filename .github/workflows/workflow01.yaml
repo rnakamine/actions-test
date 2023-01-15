@@ -1,0 +1,8 @@
+name: workflow01
+on: workflow_dispatch
+
+jobs:
+  job01:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "this is pen"
